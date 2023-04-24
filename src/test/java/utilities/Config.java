@@ -10,11 +10,11 @@ public class Config {
     static {
         try {
             properties = new Properties();
-            FileInputStream file = new FileInputStream("configurations.properties");
+            FileInputStream file = new FileInputStream("configuration.properties");
             properties.load(file);
             file.close();
         } catch (IOException exception) {
-            System.out.println("Congig file was not found");
+            System.out.println("Config file was not found");
         }
     }
 

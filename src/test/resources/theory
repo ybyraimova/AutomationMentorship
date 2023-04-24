@@ -1,0 +1,30 @@
+API development for Study Mate
+1. Creation of the entities.
+Entity means type
+We need entity group.
+Group entity:
+-group name : String
+-description: String
+-graduationDate: String
+-image: String
+
+
+When backend developer finishes the APIs (web services) they must provide documentation(Instructions)
+
+At the workplace I need to ask frontend and backend devs how to hit the backend API because as an SDET I am not
+required to know very well how to perform it.
+
+End point: address of your method (behind the url that gets triggered)  -- URL
+token - you have to be authorized in order to get that information from backend
+
+
+How to hit the backend APIs?
+1. We need endpoint url; ==> servers (it is the url listed in swagger)
+2. Type of HTTP method;
+
+
+I try to hit Course getting API
+https://backend.studymate.us/api/courses
+HTTP method: GET . each http method has own id.
+
+

@@ -1,6 +1,6 @@
 package tests.studymateTests;
 
-public class StudentEntities {
+public class Student {
     //Student entities
     String firstName;
     String lastName;

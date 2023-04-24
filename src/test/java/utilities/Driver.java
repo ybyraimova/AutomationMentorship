@@ -2,6 +2,7 @@ package utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -19,7 +20,10 @@ public class Driver {
          */
         if (driver == null) {
             if (browser.equalsIgnoreCase("chrome")) {
-                driver = new ChromeDriver();
+                ChromeOptions co = new ChromeOptions();
+                co.addArguments("--remote-allow-origins=*");
+                driver = new ChromeDriver(co);
+
                 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                 driver.manage().window().maximize();

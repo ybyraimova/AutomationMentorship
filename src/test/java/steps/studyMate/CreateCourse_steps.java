@@ -1,2 +1,4 @@
-package steps.studyMate;public class CreateCourse_steps {
+package steps.studyMate;
+
+public class CreateCourse_steps {
 }

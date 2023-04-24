@@ -1,4 +1,4 @@
-package pages.courses;
+package pages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -53,6 +53,8 @@ public class CoursesPageClass {
     public List<WebElement> threeDotButtons;
     @FindBy(xpath = "(//div/div/button)[1]")
     public WebElement oneCourseThreeDotsButton;
+    @FindBy(xpath = "(//div[@role='presentation']/div[3]/ul)[1]/li[1]")
+    public WebElement oneAssignTeacherButton;
     @FindBy(xpath = "(//div[@data-testid='sentinelStart']/../div[3])[1]/ul/li[2]")
     public WebElement oneCourseEditButton;
 
@@ -90,6 +92,16 @@ public class CoursesPageClass {
     @FindBy(xpath = "//ul[@role='listbox']/li/span/input")
     public  List <WebElement> teachersDropDownList;
 
+    @FindBy(xpath = "//form/div[2]/li")
+    public List <WebElement> assignedTeachersInForm;
+
+    @FindBy(xpath = "(//ul[@role='listbox']/li/span/input)[1]")
+    public WebElement firstTeacherFromDropDownList;
+    @FindBy(xpath = "(//ul[@role='listbox']/li)[1]")
+    public WebElement firstTeacherButton;
+    @FindBy(xpath = "(//ul[@role='listbox']/li)")
+    public List <WebElement> teacherButtons;
+
     @FindBy(xpath = "//div[@aria-hidden='true'][2]/div[1]")
     public WebElement randomSpot;
     @FindBy(xpath = "//div[@class='MuiAlert-message css-1xsto0d']/p")
@@ -98,6 +110,18 @@ public class CoursesPageClass {
     public WebElement cancelButtonEdit;
     @FindBy(xpath = "((//header/../div)[2]/div[1]/div/div/div/div)")
     public List <WebElement> coursesNames;
+
+    @FindBy(xpath = "//form[@id='courseForm']/div[2]//*[name()='svg']")
+    public List <WebElement> removeButtons;
+    @FindBy(xpath = "(//form[@id='courseForm']/div[2]//*[name()='svg'])[1]")
+    public WebElement removeButton;
+
+    @FindBy(xpath = "(//header)[2]/../div/div[1]/div")
+    public WebElement firstCourse;
+    @FindBy(xpath = "(//header/../div/div)[2]/div")
+    public List <WebElement> coursesList;
+    @FindBy(xpath = "(//div[@role='presentation'])[2]/div/div/p")
+    public WebElement deleteConfirmationMessage;
 
 
 //    @FindBy(xpath = "//form[@id='courseForm']/div[3]/button[2]")

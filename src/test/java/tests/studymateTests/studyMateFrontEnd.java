@@ -1,4 +1,6 @@
-package tests;
+package tests.studymateTests;
+
+import tests.studymateTests.studyMate_practice;
 
 public class studyMateFrontEnd {
     public static void main(String[] args) {
@@ -12,11 +14,7 @@ public class studyMateFrontEnd {
         System.out.println(codewise.getGroups());
 
 
-        //Group entities:
-        String groupName;
-        String description;
-        String graduationDate;
-        String image; 
+
     }
 
 }

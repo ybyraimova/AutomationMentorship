@@ -8,8 +8,8 @@ import utilities.Flow;
 
 import java.util.List;
 
-public class LoginPageClass {
-    public LoginPageClass()  {
+public class StudyMateLoginPageClass {
+    public StudyMateLoginPageClass()  {
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(name = "email")

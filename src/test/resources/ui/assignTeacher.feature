@@ -48,6 +48,7 @@
 
 
 
+
     Scenario: 6 Canceling teacher assignment after assigning several teachers
       When I click on three-dot button on the first course
       And I click on Assign teacher option from the dropdown list
@@ -57,12 +58,14 @@
 
 
 
+
     Scenario: 7 Removing already assigned teachers from a course and leaving one
       When I click on three-dot button on the first course
       And I click on Assign teacher option from the dropdown list
       And I remove one  already assigned teachers from a course
       And I click on save button
       Then I should see the pop-up message "Instructors successfully added to the course"
+
 
 
 
@@ -79,6 +82,7 @@
       When I click on three-dot button on the first course
       And I click on Assign teacher option from the dropdown list
       Then I should see the list of teachers in alphabetical order
+#      Failed. It is not in alphabetical order
 
 
 
@@ -104,9 +108,9 @@
       Scenario: 12 Verifying confirmation message for removing already assigned teacher from the course description
         When I click on the course
         And I click on the Trash button
-        Then I should see the message "Do you want to delete teacher from course "<course>"?" in the pop-up window
+        Then I should see the message "Do you want to delete teacher from course" in the pop-up window
 
-
+@remove
     Scenario: 13 Removing already assigned teacher from the course description
       When I click on the course
       And I click on the Trash button
@@ -118,7 +122,8 @@
       When I click on the course
       And I click on the Trash button
       And I click on cancel button
-      Then I should not see any pop-up message
+      Then I should not see any pop up message
+#      How to check if the pop-up message is not displayed?
 
 
 
